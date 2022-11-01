@@ -14,6 +14,8 @@ namespace AppIntPrueba.Models
         public int SongLikes { get; set; }
         public int SongDislikes { get; set; }
         public string SongImageRoute { get; set; }
+
+        public string SongYoutubeRoute { get; set; }
         public int ArtistId { get; set; }
         public Artist Artist { get; set; }
 

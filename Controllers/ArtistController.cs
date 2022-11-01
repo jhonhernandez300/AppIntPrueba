@@ -25,8 +25,21 @@ namespace AppIntPrueba.Controllers
         // GET: api/GetArtist/5
         [HttpGet("GetArtist/{artistName}")]
         public async Task<IActionResult> GetArtist(string artistName)
-        {            
-            var result = await dataContext.Artists.Where(i => i.ArtistName == artistName).ToListAsync();
+        {          
+            var result = dataContext.Artists.Include(b => b.Songs).Where(i => i.ArtistName == artistName);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(result);
+        }
+                
+        [HttpGet("GetSongsForAnArtist/{artistName}")]
+        public IActionResult GetSongsForAnArtist(string artistName)
+        {
+            var result = dataContext.Artists.Include(b => b.Songs).Where(i => i.ArtistName == artistName);
 
             if (result == null)
             {

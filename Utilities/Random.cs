@@ -47,7 +47,7 @@ namespace AppIntPrueba.Utilities
                             randomList.Add(myNumber);
                         }
                     }
-                } while (randomList.Count <= 6);
+                } while (randomList.Count < 6);
             }
             return songsList;
         }

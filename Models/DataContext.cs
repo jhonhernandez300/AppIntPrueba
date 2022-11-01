@@ -64,7 +64,8 @@ namespace AppIntPrueba.Models
                SongName = "Nothing Else Matters",
                SongLikes = 1,
                SongDislikes = 0,
-               SongImageRoute = "./assets",
+               SongImageRoute = "../../assets/nothing else matters.JPG",
+               SongYoutubeRoute = "../../assets/tAGnKpE4NCI",
                ArtistId = 1
            }
            );
@@ -77,8 +78,9 @@ namespace AppIntPrueba.Models
                 SongName = "Master of Pupets",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 1
+                SongImageRoute = "../../assets/master of puppets.JPG",
+               SongYoutubeRoute = "../../assets/6xjJ2XIbGRk",
+               ArtistId = 1
             }
            );
            modelBuilder.Entity<Song>()
@@ -90,8 +92,9 @@ namespace AppIntPrueba.Models
                 SongName = "The Unforgiven",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 1
+                SongImageRoute = "../../assets/the unforgiven.JPG",
+               SongYoutubeRoute = "../../assets/DDGhKS6bSAE",
+               ArtistId = 1
             }
            );
            modelBuilder.Entity<Song>()
@@ -103,8 +106,9 @@ namespace AppIntPrueba.Models
                 SongName = "One",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 1
+                SongImageRoute = "../../assets/one.JPG",
+               SongYoutubeRoute = "../../assets/WM8bTdBs-cw",
+               ArtistId = 1
             }
            );
            modelBuilder.Entity<Song>()
@@ -116,8 +120,9 @@ namespace AppIntPrueba.Models
                 SongName = "For Whom the Bell Tolls",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 1
+                SongImageRoute = "../../assets/for whom the bells tolls.JPG",
+               SongYoutubeRoute = "../../assets/B_HSa1dEL9s",
+               ArtistId = 1
             }
            );
            modelBuilder.Entity<Song>()
@@ -129,8 +134,9 @@ namespace AppIntPrueba.Models
                 SongName = "Whiskey in the Jar",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 1
+                SongImageRoute = "../../assets/whiskey in the jar.JPG",
+               SongYoutubeRoute = "../../assets/boanuwUMNNQ",
+               ArtistId = 1
             }
            );
            modelBuilder.Entity<Song>()
@@ -142,8 +148,9 @@ namespace AppIntPrueba.Models
                 SongName = "Sad but True",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 1
+                SongImageRoute = "../../assets/sadButTrue.JPG",
+               SongYoutubeRoute = "../../assets/A8MO7fkZc5o",
+               ArtistId = 1
             }
            );
            modelBuilder.Entity<Song>()
@@ -155,8 +162,9 @@ namespace AppIntPrueba.Models
                 SongName = "Everlong",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 1
+                SongImageRoute = "../../assets/Everlong",
+               SongYoutubeRoute = "../../assets/eBG7P-K-r1Y",
+               ArtistId = 1
             }
            );
            modelBuilder.Entity<Song>()
@@ -168,8 +176,9 @@ namespace AppIntPrueba.Models
                 SongName = "The Pretender",
                 SongLikes = 1,
                 SongDislikes = 0,
-                SongImageRoute = "./assets",
-                ArtistId = 2
+                SongImageRoute = "../../assets/the pretender.JPG",
+               SongYoutubeRoute = "../../assets/SBjQ9tuuTJQ",
+               ArtistId = 2
             }
            );
             modelBuilder.Entity<Song>()
@@ -181,7 +190,8 @@ namespace AppIntPrueba.Models
               SongName = "Best of You",
               SongLikes = 1,
               SongDislikes = 0,
-              SongImageRoute = "./assets",
+              SongImageRoute = "../../assets/bestOfYou.JPG",
+              SongYoutubeRoute = "../../assets/h_L4Rixya64",
               ArtistId = 2
           }
           );
@@ -194,7 +204,8 @@ namespace AppIntPrueba.Models
               SongName = "My Hero",
               SongLikes = 1,
               SongDislikes = 0,
-              SongImageRoute = "./assets",
+              SongImageRoute = "../../assets/my hero.PNG",
+              SongYoutubeRoute = "../../assets/EqWRaAF6_WY",
               ArtistId = 2
           }
           );
