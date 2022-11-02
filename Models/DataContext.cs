@@ -65,7 +65,7 @@ namespace AppIntPrueba.Models
                SongLikes = 1,
                SongDislikes = 0,
                SongImageRoute = "../../assets/nothing else matters.JPG",
-               SongYoutubeRoute = "../../assets/tAGnKpE4NCI",
+               SongYoutubeRoute = "tAGnKpE4NCI",
                ArtistId = 1
            }
            );
@@ -79,7 +79,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/master of puppets.JPG",
-               SongYoutubeRoute = "../../assets/6xjJ2XIbGRk",
+               SongYoutubeRoute = "6xjJ2XIbGRk",
                ArtistId = 1
             }
            );
@@ -93,7 +93,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/the unforgiven.JPG",
-               SongYoutubeRoute = "../../assets/DDGhKS6bSAE",
+               SongYoutubeRoute = "DDGhKS6bSAE",
                ArtistId = 1
             }
            );
@@ -107,7 +107,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/one.JPG",
-               SongYoutubeRoute = "../../assets/WM8bTdBs-cw",
+               SongYoutubeRoute = "WM8bTdBs-cw",
                ArtistId = 1
             }
            );
@@ -121,7 +121,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/for whom the bells tolls.JPG",
-               SongYoutubeRoute = "../../assets/B_HSa1dEL9s",
+               SongYoutubeRoute = "B_HSa1dEL9s",
                ArtistId = 1
             }
            );
@@ -135,7 +135,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/whiskey in the jar.JPG",
-               SongYoutubeRoute = "../../assets/boanuwUMNNQ",
+               SongYoutubeRoute = "boanuwUMNNQ",
                ArtistId = 1
             }
            );
@@ -149,7 +149,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/sadButTrue.JPG",
-               SongYoutubeRoute = "../../assets/A8MO7fkZc5o",
+               SongYoutubeRoute = "A8MO7fkZc5o",
                ArtistId = 1
             }
            );
@@ -163,7 +163,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/Everlong",
-               SongYoutubeRoute = "../../assets/eBG7P-K-r1Y",
+               SongYoutubeRoute = "eBG7P-K-r1Y",
                ArtistId = 1
             }
            );
@@ -177,7 +177,7 @@ namespace AppIntPrueba.Models
                 SongLikes = 1,
                 SongDislikes = 0,
                 SongImageRoute = "../../assets/the pretender.JPG",
-               SongYoutubeRoute = "../../assets/SBjQ9tuuTJQ",
+               SongYoutubeRoute = "SBjQ9tuuTJQ",
                ArtistId = 2
             }
            );
@@ -191,7 +191,7 @@ namespace AppIntPrueba.Models
               SongLikes = 1,
               SongDislikes = 0,
               SongImageRoute = "../../assets/bestOfYou.JPG",
-              SongYoutubeRoute = "../../assets/h_L4Rixya64",
+              SongYoutubeRoute = "h_L4Rixya64",
               ArtistId = 2
           }
           );
@@ -205,7 +205,7 @@ namespace AppIntPrueba.Models
               SongLikes = 1,
               SongDislikes = 0,
               SongImageRoute = "../../assets/my hero.PNG",
-              SongYoutubeRoute = "../../assets/EqWRaAF6_WY",
+              SongYoutubeRoute = "EqWRaAF6_WY",
               ArtistId = 2
           }
           );

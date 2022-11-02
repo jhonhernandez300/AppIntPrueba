@@ -36,14 +36,17 @@ namespace AppIntPrueba.Controllers
         }
 
         [HttpPost("UpdateLikes")]
-        public ActionResult<Song> UpdateLikes([FromBody] Song song)
+        public ActionResult<Song> UpdateLikes( Song song)
         //public async Task<ActionResult<Song>> UpdateLikes([FromBody] Song song)
         {
             //var result = await dataContext.Songs.AsNoTracking().Where(i => i.SongId == song.SongId).ToListAsync();
             //var result = dataContext.Songs.FirstOrDefault(x => x.SongId == song.SongId);
             /*System.InvalidOperationException: 'An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'
              */
-            var result = dataContext.Songs.Where(x => x.SongId == song.SongId).ToList();
+            //int id = Convert.ToInt32(songId);
+            song.SongLikes += 1;
+            Console.WriteLine(song.SongLikes);
+             var result = dataContext.Songs.Where(x => x.SongId == song.SongId).ToList();
             /*System.InvalidOperationException: 'An exception was thrown while attempting to evaluate a LINQ query parameter expression. See the inner exception for more information. To show additional information call 'DbContextOptionsBuilder.EnableSensitiveDataLogging'.'
              */
 

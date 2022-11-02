@@ -21,7 +21,22 @@ namespace AppIntPrueba.Controllers
         {
             dataContext = _dataContext;
         }
-                
+
+        [HttpGet("GetComments/{songId}")]
+        public async Task<IActionResult> GetComments(int songId)
+        {
+            //int id = Convert.ToInt32(songId);
+            var result =  dataContext.Comments.Where(i => i.SongId == songId);
+
+            if (result == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(result);
+        }
+
+
         [HttpPost("SaveComment")]
         public async Task<ActionResult<Comment>> SaveComment([FromBody] Comment comment)
         //public async Task<ActionResult<Comment>> SaveComment(Comment comment)
