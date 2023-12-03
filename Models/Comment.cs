@@ -7,12 +7,25 @@ using System.Threading.Tasks;
 namespace AppIntPrueba.Models
 {
     public class Comment
-    {        
-        public int CommentId { get; set; }
-        public DateTime CommentDate { get; set; }
-        public string? CommentContent { get; set; }
-        public int SongId { get; set; }
-        public Song Song { get; set; }
+    {
+        public Comment()
+        {
+            // Initialize non-nullable properties in the constructor
+            Content = string.Empty; // or any default non-null value
+            CommentDate = DateTime.Today;
+            //Movie = new Movie();
+        }
 
+        public int CommentId { get; set; }
+        
+        [Required]
+        public DateTime CommentDate { get; set; }
+
+        [Required]
+        [StringLength(300, MinimumLength = 2)]
+        public string Content { get; set; }
+
+        public int? MovieId { get; set; }
+        public Movie? Movie { get; set; }
     }
 }

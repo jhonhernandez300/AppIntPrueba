@@ -22,11 +22,10 @@ namespace AppIntPrueba.Controllers
             dataContext = _dataContext;
         }
 
-        [HttpGet("GetComments/{songId}")]
-        public async Task<IActionResult> GetComments(int songId)
-        {
-            //int id = Convert.ToInt32(songId);
-            var result =  dataContext.Comments.Where(i => i.SongId == songId);
+        [HttpGet("GetComments/{movieId}")]
+        public async Task<IActionResult> GetComments(int movieId)
+        {                       
+            var result =  await dataContext.Comments.Where(i => i.MovieId == movieId).ToListAsync();
 
             if (result == null)
             {
@@ -38,26 +37,35 @@ namespace AppIntPrueba.Controllers
 
 
         [HttpPost("SaveComment")]
-        public async Task<ActionResult<Comment>> SaveComment([FromBody] Comment comment)
-        //public async Task<ActionResult<Comment>> SaveComment(Comment comment)
+        public async Task<IActionResult> SaveComment([FromBody] Comment comment)
+        //public async Task<IActionResult> SaveComment(Comment comment, int movieId)
         {
             if (comment == null) { 
                 return BadRequest();
             }
 
-            try
+            var movie = await dataContext.Movies.Where(i => i.MovieId == comment.MovieId).ToListAsync();
+
+            if (movie == null)
             {
-                var result = dataContext.Comments.Add(comment);
-                await dataContext.SaveChangesAsync();
-                //return Ok(result);
-                return StatusCode((int)HttpStatusCode.Created);
+                return BadRequest();
             }
-            catch (Exception e)
+            else
             {
-                Console.WriteLine(e.Message);
-                //return StatusCode(500, "Comentario no guardado");
-                return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
-            }            
+                try
+                {                    
+                    var result = dataContext.Comments.Add(comment);
+                    await dataContext.SaveChangesAsync();
+                    return StatusCode((int)HttpStatusCode.Created);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                    return StatusCode((int)HttpStatusCode.InternalServerError, e.Message);
+                }
+            }
+
+                       
         }
     }
 }

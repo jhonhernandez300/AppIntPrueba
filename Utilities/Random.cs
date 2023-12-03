@@ -1,6 +1,5 @@
 ﻿using AppIntPrueba.Models;
 using System;
-using AppIntPrueba.Models;
 using System.Data;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
@@ -17,17 +16,17 @@ namespace AppIntPrueba.Utilities
 
         }
 
-        public List<Song> SixUniqueSongs() {            
-            var result = dataContext.Songs.Where(x => x.SongId == dataContext.Songs.Max(y => y.SongId)).First();
-            
-            //Lista de Ids numéricos para asegurar que no se envían números repetidos
+        public List<Movie> TwoUniqueMovies() {            
+            var result = dataContext.Movies.Where(x => x.MovieId == dataContext.Movies.Max(y => y.MovieId)).First();
+
+            //List of numerical IDs to ensure that no duplicate numbers are sent
             List<int> randomList = new List<int>();
-            List<Song> songsList = new List<Song>();
+            List<Movie> moviesList = new List<Movie>();
             
-            //Por si no hay Songs
-            if (result != null && result.SongId >= 6)
+            //In case there are not movies
+            if (result != null && result.MovieId >= 2)
             {
-                int max = result.SongId;
+                int max = result.MovieId;
                 var rand = new Random();                
                 int myNumber = 0;
 
@@ -37,19 +36,17 @@ namespace AppIntPrueba.Utilities
 
                     if (!randomList.Contains(myNumber))
                     {
-                        var song = dataContext.Songs.Include(b => b.Artist).Where(i => i.SongId == myNumber);
-                        //var song = dataContext.Songs.Where(i => i.SongId == myNumber)
-                        //.Include(b => b.Artist.ArtistName);
+                        var movie = dataContext.Movies.Include(b => b.Comments).Where(i => i.MovieId == myNumber);                        
 
-                        if (song != null)
+                        if (movie != null)
                         {
-                            songsList.AddRange(song.ToList<Song>());                                                        
+                            moviesList.AddRange(movie.ToList<Movie>());                                                        
                             randomList.Add(myNumber);
                         }
                     }
-                } while (randomList.Count < 6);
+                } while (randomList.Count < 2);
             }
-            return songsList;
+            return moviesList;
         }
     }
 }
