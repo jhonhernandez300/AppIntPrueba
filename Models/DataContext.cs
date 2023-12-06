@@ -45,7 +45,7 @@ namespace AppIntPrueba.Models
                ImageRoute = "../../assets/Tenet.png",
                Duration = "2h 30 min",
                Genre = "Action, Sci-Fi",
-               TrailerLink = "https://www.youtube.com/watch?v=LdOM0x0XDMo"
+               TrailerLink = "9UfIRXjoO3I?si=-ESo5GlhVtCie2qt"
            }             
            );
 
@@ -61,7 +61,7 @@ namespace AppIntPrueba.Models
                   ImageRoute = "../../assets/SpiderMan.png",
                   Duration = "1h 57min",
                   Genre = "Action, Animation, Adventure",
-                  TrailerLink = "https://www.youtube.com/watch?v=tg52up16eq0"
+                  TrailerLink = "g4Hbz2jLxvQ?si=svS6wG8qKGc-6_Xg"
               }           
            );
 
@@ -77,7 +77,7 @@ namespace AppIntPrueba.Models
               ImageRoute = "../../assets/KnivesOut.png",
               Duration = "2h 10min",
               Genre = "Comedy, Crime, Drama",
-              TrailerLink = "https://www.youtube.com/watch?v=qGqiHJTsRkQ"
+              TrailerLink = "qGqiHJTsRkQ?si=lzgBSLf83TZELPE7"
           }
            );
 
@@ -93,7 +93,7 @@ namespace AppIntPrueba.Models
                ImageRoute = "../../assets/GuardiansOfTheGalaxy.png",
                Duration = "2h 1min",
                Genre = "Action, Adventure, Comedy",
-               TrailerLink = "https://www.youtube.com/watch?v=d96cjJhvlMA"
+               TrailerLink = "d96cjJhvlMA?si=QQCyB3VqDSed3nhu"
            }
            );
 
@@ -109,7 +109,7 @@ namespace AppIntPrueba.Models
                ImageRoute = "../../assets/Avengers.png",
                Duration = "2h 21min",
                Genre = "Action, Adventure, Sci-Fi",
-               TrailerLink = "https://www.youtube.com/watch?v=tmeOjFno6Do"
+               TrailerLink = "-f5PwE_Q8Fs?si=JJ1NkKNgq5xuYTN2"
            }
            );
 
