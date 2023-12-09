@@ -68,6 +68,34 @@ namespace AppIntPrueba.Migrations
                             CommentDate = new DateTime(2013, 6, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Content = "I like it",
                             MovieId = 3
+                        },
+                        new
+                        {
+                            CommentId = 4,
+                            CommentDate = new DateTime(2013, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Content = "Cool seeing them all together again, even if I didn't massively enjoy it. It's good, nothing more or less in my opinion",
+                            MovieId = 5
+                        },
+                        new
+                        {
+                            CommentId = 5,
+                            CommentDate = new DateTime(2014, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Content = "Robert Downey Jr. felt a little flat to me as Iron Man - he still has a decent amount of moments, just not as many as you get in his individual films",
+                            MovieId = 5
+                        },
+                        new
+                        {
+                            CommentId = 6,
+                            CommentDate = new DateTime(2015, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Content = "A cheerful blockbuster in which Star Wars meets Ziggy Stardust",
+                            MovieId = 4
+                        },
+                        new
+                        {
+                            CommentId = 7,
+                            CommentDate = new DateTime(2015, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Content = "Guardians bounces with the energy of pure invention.",
+                            MovieId = 4
                         });
                 });
 
@@ -125,7 +153,7 @@ namespace AppIntPrueba.Migrations
                             Rating = 7.7999999999999998,
                             ReleaseDate = new DateTime(2020, 9, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Tenet",
-                            TrailerLink = "https://www.youtube.com/watch?v=LdOM0x0XDMo"
+                            TrailerLink = "9UfIRXjoO3I?si=-ESo5GlhVtCie2qt"
                         },
                         new
                         {
@@ -137,7 +165,7 @@ namespace AppIntPrueba.Migrations
                             Rating = 8.4000000000000004,
                             ReleaseDate = new DateTime(2018, 12, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Spider-Man: Into the Spider-Verse",
-                            TrailerLink = "https://www.youtube.com/watch?v=tg52up16eq0"
+                            TrailerLink = "g4Hbz2jLxvQ?si=svS6wG8qKGc-6_Xg"
                         },
                         new
                         {
@@ -149,7 +177,7 @@ namespace AppIntPrueba.Migrations
                             Rating = 7.9000000000000004,
                             ReleaseDate = new DateTime(2019, 9, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Knives Out",
-                            TrailerLink = "https://www.youtube.com/watch?v=qGqiHJTsRkQ"
+                            TrailerLink = "qGqiHJTsRkQ?si=lzgBSLf83TZELPE7"
                         },
                         new
                         {
@@ -161,7 +189,7 @@ namespace AppIntPrueba.Migrations
                             Rating = 8.0,
                             ReleaseDate = new DateTime(2014, 8, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Guardians of the Galaxy",
-                            TrailerLink = "https://www.youtube.com/watch?v=d96cjJhvlMA"
+                            TrailerLink = "d96cjJhvlMA?si=QQCyB3VqDSed3nhu"
                         },
                         new
                         {
@@ -173,7 +201,7 @@ namespace AppIntPrueba.Migrations
                             Rating = 7.2999999999999998,
                             ReleaseDate = new DateTime(2015, 5, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Title = "Avengers: Age of Ultron",
-                            TrailerLink = "https://www.youtube.com/watch?v=tmeOjFno6Do"
+                            TrailerLink = "-f5PwE_Q8Fs?si=JJ1NkKNgq5xuYTN2"
                         });
                 });
 

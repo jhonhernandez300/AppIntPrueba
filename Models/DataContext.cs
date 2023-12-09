@@ -146,6 +146,49 @@ namespace AppIntPrueba.Models
           }
           );
 
+            modelBuilder.Entity<Comment>()
+          .HasData(
+           new Comment
+           {
+               CommentId = 4,
+               CommentDate = new DateTime(2013, 7, 1),
+               MovieId = 5,
+               Content = "Cool seeing them all together again, even if I didn't massively enjoy it. It's good, nothing more or less in my opinion"
+           }
+           );
+
+            modelBuilder.Entity<Comment>()
+        .HasData(
+         new Comment
+         {
+             CommentId = 5,
+             CommentDate = new DateTime(2014, 7, 1),
+             MovieId = 5,
+             Content = "Robert Downey Jr. felt a little flat to me as Iron Man - he still has a decent amount of moments, just not as many as you get in his individual films"
+         }
+         );
+
+        modelBuilder.Entity<Comment>()
+        .HasData(
+        new Comment
+    {
+        CommentId = 6,
+        CommentDate = new DateTime(2015, 7, 1),
+        MovieId = 4,
+        Content = "A cheerful blockbuster in which Star Wars meets Ziggy Stardust"
+    }
+    );
+            modelBuilder.Entity<Comment>()
+   .HasData(
+    new Comment
+    {
+        CommentId = 7,
+        CommentDate = new DateTime(2015, 7, 1),
+        MovieId = 4,
+        Content = "Guardians bounces with the energy of pure invention."
+    }
+    );
+
             base.OnModelCreating(modelBuilder);
             
         }
